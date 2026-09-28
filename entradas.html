@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedex1000 - Entrada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Sedex1000</h1>
+    <h2>Cadastrar produto de entrada</h2>
+
+    <p><a href="home.html">Voltar</a></p>
+
+    <label for="codigo">Codigo do produto</label>
+    <input id="codigo" type="text">
+    <br>
+
+    <label for="descricao">Descricao</label>
+    <input id="descricao" type="text">
+    <br>
+
+    <label for="quantidade">Quantidade</label>
+    <input id="quantidade" type="number">
+    <br>
+
+    <label for="categoria">Categoria</label>
+    <input id="categoria" type="text">
+    <br>
+
+    <label for="dataEntrada">Data da entrada</label>
+    <input id="dataEntrada" type="date">
+    <br>
+
+    <label for="dataSaida">Data da saida (opcional)</label>
+    <input id="dataSaida" type="date">
+    <br>
+    <br>
+
+    <button onclick="cadastrarEntrada()">Cadastrar</button>
+    <br>
+
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

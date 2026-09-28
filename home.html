@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedex1000 - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="iniciarHome()">
+
+    <h1>Sedex1000</h1>
+    <h2>Controle de Estoque</h2>
+
+    <p>Usuario: <span id="usuarioLogado"></span></p>
+
+    <h2>Resumo</h2>
+
+    <p>Produtos no estoque: <span id="totalProdutos">0</span></p>
+    <p>Saidas nos ultimos dias: <span id="totalSaidas">0</span></p>
+    <p>Entradas nos ultimos dias: <span id="totalEntradas">0</span></p>
+
+    <h2>Menu</h2>
+
+    <p><a href="estoque.html">Consultar estoque</a></p>
+    <p><a href="entradas.html">Cadastrar entrada</a></p>
+    <p><a href="saidas.html">Registrar saida</a></p>
+    <p><button onclick="sair()">Sair</button></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

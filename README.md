@@ -1,2 +1,18 @@
-# Controle-de-estoque-sedex1000
-Controle de estoque
+# Sedex1000
+
+Projeto simples de controle de estoque para navegador.
+
+Arquivos principais:
+- index.html
+- cadastro.html
+- recuperar.html
+- home.html
+- estoque.html
+- entradas.html
+- saidas.html
+- script.js
+- style.css
+
+Os usuarios e produtos ficam salvos no localStorage do navegador.
+
+Para testar, abra o arquivo index.html no navegador.
