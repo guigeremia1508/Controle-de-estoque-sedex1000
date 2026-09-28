@@ -1,21 +1,16 @@
 # Sedex1000
 
-Projeto simples de controle de estoque para navegador.
+Projeto simples de controle de estoque feito com HTML, CSS e JavaScript.
 
-Arquivos principais:
-- index.html
-- login.html
-- cadastro.html
-- recuperar.html
-- home.html
-- estoque.html
-- entradas.html
-- saidas.html
-- script.js
-- style.css
+Funcionalidades atuais:
+- Criacao de conta
+- Login
+- Recuperacao de senha
+- Consulta e pesquisa de produtos
+- Cadastro de produtos
+- Unidades de medida por selecao
+- Registro de entradas e saidas
+- Edicao de produtos
+- Dados salvos no localStorage
 
-Os usuarios e produtos ficam salvos no localStorage do navegador.
-
-Para testar, abra o arquivo index.html no navegador.
-
-A tela inicial possui os botoes Entrar e Criar conta. O login e a recuperacao de senha ficam em paginas separadas.
+Para testar localmente, abra o arquivo `index.html` no navegador.

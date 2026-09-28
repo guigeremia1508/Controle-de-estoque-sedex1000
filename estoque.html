@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sedex1000 - Estoque</title>
+    <title>Consultar estoque</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="mostrarEstoque()">
 
-    <h1>Sedex1000</h1>
-    <h2>Controle de Estoque</h2>
+    <h1>Consultar estoque</h1>
 
     <p><a href="home.html">Voltar</a></p>
+
+    <label for="pesquisaEstoque">Pesquisar produto</label>
+    <br>
+    <input id="pesquisaEstoque" type="text" placeholder="Nome ou codigo">
+    <br><br>
+    <button onclick="pesquisarEstoque()">Pesquisar</button>
+    <br><br>
 
     <h2>Produtos no estoque</h2>
     <table border="1">
@@ -20,6 +26,7 @@
                 <th>Cod. produto</th>
                 <th>Descricao</th>
                 <th>Quantidade</th>
+                <th>Unidade</th>
                 <th>Categoria</th>
                 <th>Data entrada</th>
                 <th>Data saida</th>
@@ -28,13 +35,14 @@
         <tbody id="listaEstoque"></tbody>
     </table>
 
-    <h2>Produtos que sairao</h2>
+    <h2>Produtos que saíram</h2>
     <table border="1">
         <thead>
             <tr>
                 <th>Cod. produto</th>
                 <th>Descricao</th>
-                <th>Quantidade</th>
+                <th>Quantidade atual</th>
+                <th>Unidade</th>
                 <th>Data saida</th>
             </tr>
         </thead>

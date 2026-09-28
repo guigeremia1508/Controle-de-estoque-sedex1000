@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sedex1000 - Saida</title>
+    <title>Registrar saida</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregarProdutosSaida()">
+<body>
 
-    <h1>Sedex1000</h1>
-    <h2>Registrar saida</h2>
+    <h1>Registrar saida</h1>
 
     <p><a href="home.html">Voltar</a></p>
 
-    <label for="codigoSaida">Codigo do produto</label>
-    <input id="codigoSaida" type="text">
+    <label for="codigoSaida">Codigo ou nome do produto</label>
     <br>
+    <input id="codigoSaida" type="text" onblur="buscarProdutoSaida()">
+    <br><br>
+
+    <button onclick="buscarProdutoSaida()">Buscar produto</button>
+    <br>
+    <p id="nomeSaida"></p>
+
+    <label for="unidadeSaida">Tipo de unidade</label>
+    <br>
+    <input id="unidadeSaida" type="text" readonly>
+    <br><br>
 
     <label for="quantidadeSaida">Quantidade</label>
-    <input id="quantidadeSaida" type="number">
     <br>
+    <input id="quantidadeSaida" type="number" min="0.01" step="any">
+    <br><br>
 
     <label for="dataSaidaRegistro">Data da saida</label>
+    <br>
     <input id="dataSaidaRegistro" type="date">
-    <br>
-    <br>
+    <br><br>
 
     <button onclick="registrarSaida()">Registrar saida</button>
     <br>
 
     <p id="mensagemSaida"></p>
-
-    <h2>Produtos com saida marcada</h2>
-    <div id="produtosSaida"></div>
 
     <script src="script.js"></script>
 </body>

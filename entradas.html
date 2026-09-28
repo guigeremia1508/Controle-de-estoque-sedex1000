@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sedex1000 - Entrada</title>
+    <title>Cadastrar produto</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Sedex1000</h1>
-    <h2>Cadastrar produto de entrada</h2>
+    <h1>Cadastrar produto</h1>
 
     <p><a href="home.html">Voltar</a></p>
 
     <label for="codigo">Codigo do produto</label>
-    <input id="codigo" type="text">
     <br>
+    <input id="codigo" type="text">
+    <br><br>
 
     <label for="descricao">Descricao</label>
-    <input id="descricao" type="text">
     <br>
+    <input id="descricao" type="text">
+    <br><br>
+
+    <label for="unidade">Unidade de medida</label>
+    <br>
+    <select id="unidade">
+        <option value="">Selecione</option>
+        <option value="unidade">Unidade</option>
+        <option value="kg">Kg</option>
+        <option value="g">G</option>
+        <option value="tonelada">Tonelada</option>
+        <option value="litro">Litro</option>
+        <option value="ml">Ml</option>
+        <option value="metro">Metro</option>
+        <option value="caixa">Caixa</option>
+        <option value="pacote">Pacote</option>
+        <option value="outro">Outro</option>
+    </select>
+    <br><br>
 
     <label for="quantidade">Quantidade</label>
-    <input id="quantidade" type="number">
     <br>
+    <input id="quantidade" type="number" min="0.01" step="any">
+    <br><br>
 
     <label for="categoria">Categoria</label>
-    <input id="categoria" type="text">
     <br>
+    <input id="categoria" type="text">
+    <br><br>
 
     <label for="dataEntrada">Data da entrada</label>
+    <br>
     <input id="dataEntrada" type="date">
-    <br>
-
-    <label for="dataSaida">Data da saida (opcional)</label>
-    <input id="dataSaida" type="date">
-    <br>
-    <br>
+    <br><br>
 
     <button onclick="cadastrarEntrada()">Cadastrar</button>
     <br>
