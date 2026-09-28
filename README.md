@@ -13,4 +13,4 @@ Funcionalidades atuais:
 - Edicao de produtos
 - Dados salvos no localStorage
 
-Para testar localmente, abra o arquivo `index.html` no navegador.
+
